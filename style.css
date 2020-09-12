@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+
+}
+
+h2 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+	letter-spacing: 4px;
+	color: #111;
+	text-align: center;
+}
+
+/* Header */
+
+header {
+	background: #2a2829;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+header .nav {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navlist {
+	display: flex;
+}
+
+header .nav ul {
+	position: relative;
+	display: flex;
+}
+
+header .nav ul li {
+	list-style: none;
+}
+
+header .nav ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+header .nav ul li a.active {
+	color: #ff1694;
+}
+
+
+/* Header Ends Here */
+
+
+
+/*section {
+	padding: 20px;
+	width: 1280px;
+	margin: 40px auto;
+
+}*/
+
+/* Welcome Section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #008000;
+  
+}
+
+/* Typewriter Effect*/
+
+/* This typing effect portion is attributed to css-tricks.com.
+It's a beautiful platform for learning cool css tricks and many more such effects.*/
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  color: #fff;
+  font-size: 36px;
+  font-weight: 500;
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.typewriter h1 span {
+	color: #FFFF00;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+/* Typewriter Effect Ends*/
+
+
+
+h2 {
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+/*Welcome Section Ends Here */
+
+
+
+/* About Section Begins*/
+
+.about {
+	position: relative;
+	width: 100%;
+	display: flex;
+
+
+}
+
+.about .contentBx {
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+
+}
+
+
+.heading {
+	color: #fff;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: normal;
+	letter-spacing: 4px;
+	margin-bottom: 30px;
+	text-align: center;
+	
+
+}
+
+.text {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+.about .imgBx {
+	background: url(images/newbg.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+
+}
+
+/* About Section Ends Here*/
+
+
+/* Projects Section */
+
+.content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.projects h2 {
+	padding: 60px 0 60px;
+}
+
+.projects .content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.projects .content .project-tile {
+	width: 50%;
+	padding: 20px;
+}
+
+.projects .content .project-tile img {
+	max-width: 100%;
+}
+
+.btn {
+	position: relative;
+	background: #2196f3;
+	display: inline-block;
+	color: #fff;
+	margin-top: 20px;
+	padding: 10px 30px;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: 500;
+
+}
+
+.btn:hover {
+	background: #ff1694;
+}
+
+
+/* Projects Section Ends */
+
+
+
+/* Contact Section*/
+
+/* Thanks to Easy Tutorials for this beautiful Neumorphism Effect */
+
+.contact {
+	background: #e3edf7;
+	padding: 60px 0 60px;
+}
+
+.contact h2 {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 25px;
+	letter-spacing: 4px;
+	padding: 60px 0 60px;
+	color: #555;
+	text-align: center;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+
+}
+
+.social-media a {
+	display: flex;
+	background: #e3edf7;
+	height: 75px;
+	width: 75px;
+	margin: 0 15px;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255, 0.7);
+			  border: 1px solid rgba(0,0,0,0);
+	transition: transform 0.5s;
+
+}
+
+.social-media a i {
+	font-size: 35px;
+	color: #777;
+	transition: transform 0.5s;
+}
+
+.social-media a:hover { box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+					  inset -4px -4px 6px -1px rgba(255,255,255, 0.7),
+					  		-0.5px -0.5px 0px rgba(255,255,255, 1),
+					  		0.5px 0.5px 0px rgba(0,0,0, 0.15),
+					  		0px -12px 10px -10px rgba(0,0,0, 0.05);
+
+		  border: 1px solid rgba(0,0,0,0.1);
+		  transform: translateY(2px);
+
+
+}
+
+.social-media a:hover i {
+	transform: scale(0.90);
+}
+
+.social-media a:hover .fa-facebook {
+	color: #3b5998;
+}
+
+.social-media a:hover .fa-twitter {
+	color: #00acee;
+}
+
+.social-media a:hover .fa-github {
+	color: #333;
+}
+
+.social-media a:hover .fa-instagram {
+	color: #f14843;
+}
+
+.social-media a:hover .fa-youtube {
+	color: #ff0000;
+}
+
+
+
+/* Contact Section Ends */
+
+
+/* Footer */
+
+
+footer {
+	background: #2a2829;
+	padding: 20px 100px;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	letter-spacing: 1.8px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+footer p span {
+	font-size: 18px;
+	font-weight: 400;
+
+}
+
+/* Footer Ends Here */
+
+
+@media (max-width: 991px) {
+
+	
+
+	
+
+	header .nav ul li a {
+		margin-left: 15px;
+	}
+
+	.nav ul li a {
+		font-size: 12px;
+	}
+
+	.about {
+		flex-direction: column;
+	}
+
+	.about .contentBx,
+	.about .imgBx {
+		width: 100%;
+		padding: 30px;
+		min-height: 400px;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	
+
+	.projects h2 {
+		font-size: 18px;
+	}
+
+.btn {
+	
+	margin-top: 20px;
+	padding: 10px 20px;
+	font-size: 12px;
+	}
+
+	.heading {
+		font-size: 18px;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+
+	.welcome-section {
+		padding: 20px 50px;
+	}
+
+	.typewriter h1 {
+		font-size: 12px;
+	}
+
+	.contact {
+		padding: 20px 50px;
+	}
+
+	.contact h2 {
+		font-size: 18px;
+	}
+
+	.social-media a {
+		width: 40px;
+		height: 40px;
+		margin: 0 10px;
+	}
+
+	.social-media a i {
+		font-size: 20px;
+	}
+
+	footer {
+		padding: 20px 50px;
+		text-align: center;
+	}
+
+	footer p {
+		font-size: 12px;
+	}
+
+
+
+
+}
+
+/* End of CSS Styling */
