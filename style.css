@@ -40,6 +40,7 @@ header .nav {
 
 .navlist {
 	display: flex;
+
 }
 
 header .nav ul {
@@ -57,11 +58,18 @@ header .nav ul li a {
 	color: #fff;
 	display: inline-block;
 	margin-left: 40px;
+	transition: 0.3s ease transform;
 }
+header .nav ul li a:hover
+{
+	transform: scale(1.1);
 
+}
 header .nav ul li a.active {
 	color: #ff1694;
 }
+
+
 
 
 /* Header Ends Here */
